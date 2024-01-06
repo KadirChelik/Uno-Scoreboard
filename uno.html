@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uno ScoreBoard</title>
+    <link rel="stylesheet" href="./uno.css">
+</head>
+<body>
+  <div class="container-top">
+    <div class="sakura"><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="text-lap">
+    <div class="lap-container">Tur<span class="lap" id="lap">154</span></div>
+    <div class="lap-button-container">
+    <button class="button-clean" id="silme-butonu"><i class="fa-sharp fa-solid fa-trash-can"></i></button>
+    <button class="button-turn" id="kisi-butonu"><i class="fa-solid fa-user"></i></button>
+    </div>
+    </div>
+  
+  <div class="text-users">
+    <div class="user-container">
+      <div class="user-score">
+      <span class="user1">Kadir</span>
+      <span class="user-number" id="user1score">80</span>
+    </div>
+    <div class="button-container">
+      <button id="user1buttonminus">
+      <i class="fa-solid fa-minus"></i>
+    </button> 
+    <button id="user1buttonplus">
+      <i class="fa-solid fa-plus"></i>
+    </button> 
+    </div>
+    </div>
+    <div class="user-container">
+      <div class="user-score">
+      <span class="user2">Nur</span>
+      <span class="user-number" id="user2score">73</span>
+    </div>
+    <div class="button-container">
+      <button id="user2buttonminus">
+      <i class="fa-solid fa-minus"></i>
+    </button> 
+    <button id="user2buttonplus">
+      <i class="fa-solid fa-plus"></i>
+    </button> 
+    </div>
+    </div>
+  </div>
+  </div>
+  <div class="container-bottom">
+    <div class="flex-container1">
+      <div class="uno-card-container1">
+        <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="back-container">
+            <div class="back-oval"></div>
+            <div class="text">UNO</div>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <div class="container green">
+            <div class="oval"></div>
+            <div class="number">M</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="back-container">
+            <div class="back-oval"></div>
+            <div class="text">UNO</div>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <div class="container red">
+            <div class="oval"></div>
+            <div class="number">A</div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      
+    <div class="uno-card-container2">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="back-container">
+              <div class="back-oval"></div>
+              <div class="text">UNO</div>
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <div class="container blue">
+              <div class="oval"></div>
+              <div class="number">R</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="back-container">
+              <div class="back-oval"></div>
+              <div class="text">UNO</div>
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <div class="container blue">
+              <div class="oval"></div>
+              <div class="number">E</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+<div class="flex-container2">
+  <div class="flip-card uno-card1">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="back-container">
+        <div class="back-oval"></div>
+        <div class="text">UNO</div>
+      </div>
+    </div>
+    <div class="flip-card-back">
+      <div class="container green">
+        <div class="oval"></div>
+        <div class="number">U</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="back-container">
+        <div class="back-oval"></div>
+        <div class="text">UNO</div>
+      </div>
+    </div>
+    <div class="flip-card-back">
+      <div class="container green">
+        <div class="oval"></div>
+        <div class="number">I</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card uno-card2">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="back-container">
+        <div class="back-oval"></div>
+        <div class="text">UNO</div>
+      </div>
+    </div>
+    <div class="flip-card-back">
+      <div class="container green">
+        <div class="oval"></div>
+        <div class="number">T</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="flex-container2">
+  <div class="flip-card uno-card3">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="back-container">
+          <div class="back-oval"></div>
+          <div class="text">UNO</div>
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <div class="container green">
+          <div class="oval"></div>
+          <div class="number">N</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card uno-card4">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="back-container">
+          <div class="back-oval"></div>
+          <div class="text">UNO</div>
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <div class="container green">
+          <div class="oval"></div>
+          <div class="number">S</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex-container2">
+  <div class="flip-card uno-card5">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="back-container">
+          <div class="back-oval"></div>
+          <div class="text">UNO</div>
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <div class="container green">
+          <div class="oval"></div>
+          <div class="number">A</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card uno-card6">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="back-container">
+          <div class="back-oval"></div>
+          <div class="text">UNO</div>
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <div class="container green">
+          <div class="oval"></div>
+          <div class="number">O</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="flip-card uno-card7">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="back-container">
+          <div class="back-oval"></div>
+          <div class="text">UNO</div>
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <div class="container green">
+          <div class="oval"></div>
+          <div class="number">M</div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  </div>
+  <p class="me">© Kadir Celik 2022</p>
+  <script src="./uno.js"></script>
+  <script src="https://kit.fontawesome.com/780bcefb36.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

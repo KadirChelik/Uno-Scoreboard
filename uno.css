@@ -1,0 +1,773 @@
+  @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body {
+  zoom: 0.7;
+  overflow-x: hidden;
+    background-color:#181A1B;
+    margin: 0;
+	  padding: 0;
+    }
+  .container-top{
+    position: relative;
+    z-index: 10;
+    background-image: linear-gradient(230deg, #f46af1 0%, #8c14e8 50%, #8a97ed 100%);
+    background-size: 100%;
+    height: 100%;
+  }
+  .container-bottom{
+    height: 130vh;
+  }
+  .lap-button-container{
+    display: flex;
+    flex-direction: column;
+    }
+  .button-clean{
+    background-color: #000000;
+    height: 50%;
+    width: 90px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 1px 30px 1px 1px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border: 2px solid rgb(82, 81, 81);
+    border-left: 2px solid #371d43;
+    border-bottom: 2px solid #371d43;
+    box-shadow:  -1px 17px #371d43;
+    margin-top: 0;
+    overflow: hidden;
+    text-shadow: -2px 2px 4px #8c14e8;
+    }
+  .button-clean:hover{
+    transform: translateY(-7px);
+    background-color: #ffffff;
+    color: #000000;
+  box-shadow: 0 20px 0 0 #371d43;
+  }
+  .button-clean:active{
+      transform: translateY(10px);
+      box-shadow: 0px 0px 0 0 #371d43;
+    }
+  .button-clean:focus{
+    width: 200px;
+    transition: 0.3s;
+  }
+  .onay-metni{
+    font-family: 'Varela Round', sans-serif;
+    background-color: #000000;
+    color:#ffffff;
+    font-size: 33px;
+    text-align: center;
+    text-shadow: -2px 2px 4px #8c14e8;
+  }
+  .onay-metni:hover{
+   background-color: #c22121;
+   color: #ffffff;
+  }
+  
+  
+  
+  .button-turn{
+    z-index: 1;
+    background-color: #000000;
+  height: 50%;
+  width: 90px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 1px 1px 30px 1px;
+  cursor: pointer;
+  transition: 0.1s ease;
+  border: 2px solid rgb(82, 81, 81);
+  border-top: 2px solid #371d43;
+  border-left: 2px solid #371d43;
+  box-shadow: -17px 17px #371d43;
+  margin-top: 0;
+  overflow: hidden;
+  text-shadow: -2px 2px 4px #8c14e8;
+  }
+
+  .kisi-metni{
+    font-family: 'Varela Round', sans-serif;
+    color:#ffffff;
+    font-size: 33px;
+    text-align: center;
+    text-shadow: -2px 2px 4px #8c14e8;
+  }
+
+  .button-turn:hover{
+    transform: translateY(-5px);
+    background-color:#ffffff;
+    color: #000000;
+  box-shadow: -20px 22px 0 0 #371d43;
+  }
+  .button-turn:active{
+    transform: translateY(10px);
+    box-shadow: 0px 0px 0 0 #371d43;
+  }
+  .text-lap{
+    font-family: 'Varela Round', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 100px;
+  text-shadow: -2px 2px 4px #8c14e8;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 150px;
+  padding-top: 150px;
+  }
+  .lap-container{
+    z-index: 20;
+    display: inline-flex;
+    background-image: url("./sakura1.jpg");
+    background-size: 100%;
+    border: 2px solid rgb(82, 81, 81);
+    border-right: 2px solid  #371d43;
+    border-radius: 30px 0px 0px 30px;
+    padding: 40px;
+    box-shadow: -17px 17px #371d43;
+  }
+  .lap{
+    padding-left: 40px;
+  }
+  .user-container{
+    display: flexbox;
+    margin-bottom: 100px;
+  }
+  .user-score {
+    display: inline-block;
+    background-color: #000000;
+    border: 2px solid rgb(82, 81, 81);
+    border-radius: 30px;
+    padding: 30px 40px 30px 7px;
+    margin-bottom: -20px;
+    box-shadow: -17px 17px #371d43;
+    font-weight:bold;
+  }
+  .user1{
+    display: inline;
+    background-color: #8a97ed;
+    border: 2px solid rgb(82, 81, 81);
+    border-radius: 25px 50px 50px 25px;
+    padding: 20px 60px 20px 40px ;
+  }
+  .user2{
+    display: inline;
+    background-color: #f46af1;
+    border: 2px solid rgb(198, 198, 198);
+    border-radius: 25px 50px 50px 25px;
+    padding: 20px 60px 20px 50px ;
+  }
+ .text-users{
+  font-family: 'Varela Round', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: #fefefe;
+  text-shadow: -7px 5px 2px #000000;
+  font-size: 100px;
+  padding-bottom: 120px;
+ }
+ .user-number{
+  margin-left: 20px;
+  text-shadow: -3px 3px 5px #8c14e8;
+ }
+ .buttons{
+  display: flex;
+    
+ }
+ .button-container{
+  justify-content: space-around;  
+  display: flex;
+  width: 100%px;
+  margin-top: 20px;
+ }
+ button {
+  background-color: #000000;
+  height: 100px;
+  width: 46%;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 2em;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border: 1px solid rgb(82, 81, 81);
+  box-shadow: -15px 15px 0 0 #371d43;
+  margin-top: 30px;
+  text-shadow: -2px 2px 4px #8c14e8;
+}
+
+button:hover {
+  transform: translateY(-5px);
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: -20px 20px 0 0 #371d43;
+}
+button:active {
+  transform: translateY(10px);
+  transition: 0.1s;
+  box-shadow: 0px 0px 0 0 #371d43;
+}
+
+  .container {
+    z-index: 2;
+    border-radius: 10px;
+    height: 170px;
+    width: 100px;
+    border: 10px solid white;
+  }
+  
+  .back-container {
+    border-radius: 20px;
+    height: 170px;
+    width: 100px;
+    border: 10px solid white;
+    background-color: #371d43;
+  }
+  
+  .back-oval {
+    position: relative;
+    left: 10px;
+    top: 11px;
+    width: 80px;
+    height: 150px;
+    background: #ff001e;
+    transform: rotate(27deg);
+    border-radius: 160px / 300px;
+  }
+  
+  .container::before {
+    content: "K";
+    position: absolute;
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    font-size: 2em;
+    font-weight: 900;
+    top: -1px;
+    left: -35%;
+    color: #fefefe;
+    text-shadow: -4px 1px #232323;
+  }
+  
+  .container::after {
+    content: "N";
+    position: absolute;
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    font-size: 2em;
+    font-weight: 900;
+    top: -152px;
+    left: 32%;
+    color: #fefefe;
+    text-shadow: -4px 1px #232323;
+  }
+  
+  .red {
+    background-color: #c42335;
+    border-radius: 20px;
+    color: #c42335;
+  }
+  
+  .green {
+    background-color: #62a92d;
+    border-radius: 20px;
+    color: #62a92d;
+  }
+  
+  .yellow {
+    background-color: #ebce2c;
+    border-radius: 20px;
+    color: #ebce2c;
+  }
+  
+  .blue {
+    background-color: #0158a8;
+    border-radius: 20px;
+    color: #0158a8;
+  }
+  
+  .oval {
+    position: relative;
+    left: 10px;
+    top: -26px;
+    width: 80px;
+    height: 150px;
+    background: #ffffff;
+    transform: rotate(30deg);
+    border-radius: 160px / 300px;
+  }
+  
+  .number {
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    font-size: 80px;
+    font-weight: 900;
+    text-shadow: -7px 3px #232323;
+    top: -87%;
+    left: 3%;
+  }
+  
+  .text {
+    font-family: 'Varela Round', sans-serif;
+    letter-spacing: 3px;
+    text-shadow: -8px -0.1px rgb(0, 0, 0);
+    position: relative;
+    -webkit-text-stroke: 4px #fee548;
+    transform: rotate(-30deg);
+    font-size: 40px;
+    font-weight: 600;
+    
+    -webkit-text-fill-color: transparent;
+    top: -50%;
+    left: 3%;
+  }
+  .flex-container1{
+    margin-top: 120px;
+    display:flex ;
+    justify-content:space-around;
+  }
+  .flex-container2{
+    margin-top: -20px;
+    display:flex ;
+    justify-content:space-evenly;
+    
+  }
+  
+  
+  .uno-card-container1{
+    display: flex;
+    margin-left: 700px;
+  }
+  .uno-card-container2{
+    display: flex;
+    margin-right: 700px;
+  }
+  .uno-card0{
+    position: absolute;
+    right: 35%;
+  }
+  .uno-card1{
+    position: absolute;
+    left: 30.4%;
+  }
+  .uno-card2{
+    position: absolute;
+    right: 30.4%;
+  }
+  .uno-card3{
+    position: absolute;
+    left: 36.1%;
+  }
+  .uno-card4{
+    position: absolute;
+    right: 36.1%;
+  }
+  .uno-card5{
+    position: absolute;
+    right: 41.7%;
+    top: 155%;
+  }
+  .uno-card6{
+    position: absolute;
+    left: 41.7%;
+    top: 155%;
+  }
+  .uno-card7{
+    position: absolute;
+    left: 47.5%;
+    top: 165%;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 100px;
+    height: 170px;
+    margin-right: 10px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style:preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    
+  }
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+    
+  }
+  
+  
+  
+  .flip-card-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .container-sakura{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* for text	 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  .sakura {
+    z-index: -100;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .sakura span {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 0.8vw;
+    height: 0.4vw;
+    border-radius: 5% 80% 10% 80%;
+    background-color: #ffb6c1;
+  }
+  
+  /* add animation */
+  .sakura span:nth-child(2n+1) {
+    animation: sakura-anim-1 10s 0s linear infinite;
+  }
+  
+  .sakura span:nth-child(2n+2) {
+    animation: sakura-anim-2 10s 0s linear infinite;
+  }
+  
+  /* side position */
+  .sakura span:nth-child(1) {
+    left: 0%;
+  }
+  
+  .sakura span:nth-child(2) {
+    left: 2%;
+  }
+  
+  .sakura span:nth-child(3) {
+    left: 4%;
+  }
+  
+  .sakura span:nth-child(4) {
+    left: 6%;
+  }
+  
+  .sakura span:nth-child(5) {
+    left: 8%;
+  }
+  
+  .sakura span:nth-child(6) {
+    left: 10%;
+  }
+  
+  .sakura span:nth-child(7) {
+    left: 12%;
+  }
+  
+  .sakura span:nth-child(8) {
+    left: 14%;
+  }
+  
+  .sakura span:nth-child(9) {
+    left: 16%;
+  }
+  
+  .sakura span:nth-child(10) {
+    left: 18%;
+  }
+  
+  .sakura span:nth-child(11) {
+    left: 20%;
+  }
+  
+  .sakura span:nth-child(12) {
+    left: 22%;
+  }
+  
+  .sakura span:nth-child(13) {
+    left: 24%;
+  }
+  
+  .sakura span:nth-child(14) {
+    left: 26%;
+  }
+  
+  .sakura span:nth-child(15) {
+    left: 28%;
+  }
+  
+  .sakura span:nth-child(16) {
+    left: 30%;
+  }
+  
+  .sakura span:nth-child(17) {
+    left: 32%;
+  }
+  
+  .sakura span:nth-child(18) {
+    left: 34%;
+  }
+  
+  .sakura span:nth-child(19) {
+    left: 36%;
+  }
+  
+  .sakura span:nth-child(20) {
+    left: 38%;
+  }
+  
+  .sakura span:nth-child(21) {
+    left: 40%;
+  }
+  
+  .sakura span:nth-child(22) {
+    left: 42%;
+  }
+  
+  .sakura span:nth-child(23) {
+    left: 44%;
+  }
+  
+  .sakura span:nth-child(24) {
+    left: 46%;
+  }
+  
+  .sakura span:nth-child(25) {
+    left: 48%;
+  }
+  
+  .sakura span:nth-child(26) {
+    left: 50%;
+  }
+  
+  .sakura span:nth-child(27) {
+    left: 52%;
+  }
+  
+  .sakura span:nth-child(28) {
+    left: 54%;
+  }
+  
+  .sakura span:nth-child(29) {
+    left: 56%;
+  }
+  
+  .sakura span:nth-child(30) {
+    left: 58%;
+  }
+  
+  .sakura span:nth-child(31) {
+    left: 60%;
+  }
+  
+  .sakura span:nth-child(32) {
+    left: 62%;
+  }
+  
+  .sakura span:nth-child(33) {
+    left: 64%;
+  }
+  
+  .sakura span:nth-child(34) {
+    left: 66%;
+  }
+  
+  .sakura span:nth-child(35) {
+    left: 68%;
+  }
+  
+  .sakura span:nth-child(36) {
+    left: 70%;
+  }
+  
+  .sakura span:nth-child(37) {
+    left: 72%;
+  }
+  
+  .sakura span:nth-child(38) {
+    left: 74%;
+  }
+  
+  .sakura span:nth-child(39) {
+    left: 76%;
+  }
+  
+  .sakura span:nth-child(40) {
+    left: 78%;
+  }
+  
+  .sakura span:nth-child(41) {
+    left: 80%;
+  }
+  
+  .sakura span:nth-child(42) {
+    left: 82%;
+  }
+  
+  .sakura span:nth-child(43) {
+    left: 84%;
+  }
+  
+  .sakura span:nth-child(44) {
+    left: 86%;
+  }
+  
+  .sakura span:nth-child(45) {
+    left: 88%;
+  }
+  
+  .sakura span:nth-child(46) {
+    left: 90%;
+  }
+  
+  .sakura span:nth-child(47) {
+    left: 92%;
+  }
+  
+  .sakura span:nth-child(48) {
+    left: 94%;
+  }
+  
+  .sakura span:nth-child(49) {
+    left: 96%;
+  }
+  
+  .sakura span:nth-child(50) {
+    left: 98%;
+  }
+  
+  /* size */
+  .sakura span:nth-child(3n+1) {
+    width: 1.5vw;
+    height: 0.8vw;
+  }
+  
+  .sakura span:nth-child(3n+2) {
+    width: 1.3vw;
+    height: 0.6vw;
+  }
+  
+  .sakura span:nth-child(3n+3) {
+    width: 1vw;
+    height: 0.5vw;
+  }
+  
+  /* animation-duration */
+  .sakura span:nth-child(4n+1) {
+    animation-duration: 5s;
+  }
+  
+  .sakura span:nth-child(4n+2) {
+    animation-duration: 12s;
+  }
+  
+  .sakura span:nth-child(4n+3) {
+    animation-duration: 8s;
+  }
+  
+  .sakura span:nth-child(4n+4) {
+    animation-duration: 6s;
+  }
+  
+  
+  /* animation-delay */
+  .sakura span:nth-child(11n+1) {
+    animation-delay: 0s;
+  }
+  
+  .sakura span:nth-child(11n+2) {
+    animation-delay: 9s;
+  }
+  
+  .sakura span:nth-child(11n+3) {
+    animation-delay: 2s;
+  }
+  
+  .sakura span:nth-child(11n+4) {
+    animation-delay: 5s;
+  }
+  
+  .sakura span:nth-child(11n+5) {
+    animation-delay: 6s;
+  }
+  
+  .sakura span:nth-child(11n+6) {
+    animation-delay: 7s;
+  }
+  
+  .sakura span:nth-child(11n+7) {
+    animation-delay: 3s;
+  }
+  
+  .sakura span:nth-child(11n+8) {
+    animation-delay: 1s;
+  }
+  
+  .sakura span:nth-child(11n+9) {
+    animation-delay: 2s;
+  }
+  
+  .sakura span:nth-child(11n+10) {
+    animation-delay: 11s;
+  }
+  
+  .sakura span:nth-child(11n+11) {
+    animation-delay: 10s;
+  }
+  
+  /* animation */
+  @keyframes sakura-anim-1 {
+    0% {
+      top: -10%;
+      transform: translateX(0) rotateX(0) rotateY(0);
+    }
+  
+    100% {
+      top: 100%;
+      transform: translateX(15vw) rotateX(180deg) rotateY(360deg);
+    }
+  }
+  
+  @keyframes sakura-anim-2 {
+    0% {
+      top: -10%;
+      transform: translateX(0);
+    }
+  
+    100% {
+      top: 100%;
+      transform: translateX(-15vw) rotateX(180deg) rotateY(360deg);
+    }
+  }
+
+  .me{
+    font-family: 'Varela Round', sans-serif;
+    color: #fefefe;
+    text-align: center;
+    font-size: 25px;
+  }
