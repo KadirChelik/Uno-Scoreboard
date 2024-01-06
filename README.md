@@ -5,7 +5,7 @@ A simple application that helps determine who starts the game and keeps track of
 
 ## Demo
 
-- To try the game, you can visit the [demo on Vercel](https://uno-scoreboard.vercel.app/).
+- To try the app, you can visit the [demo on Vercel](https://uno-scoreboard.vercel.app/).
 
 ## Screenshots
 
