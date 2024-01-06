@@ -9,8 +9,8 @@ A simple application that helps determine who starts the game and keeps track of
 
 ## Screenshots
 
-### Main Menu
+### Scoreboard
 ![Scoreboard](https://github.com/KadirChelik/Uno-scoreboard/blob/main/unoss1.png)
 
-### Player Modes
+### Uno Cards
 ![Uno Cards](https://github.com/KadirChelik/Uno-scoreboard/blob/main/unoss2.png)
