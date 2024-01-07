@@ -1,6 +1,6 @@
 # Uno Scoreboard Application
 
-A simple application that helps determine who starts the game and keeps track of scores at the end of each Uno game.
+A simple application that helps determine who starts the game and keeps track of scores at the end of each Uno game.(for 2 players)
 
 
 ## Demo
